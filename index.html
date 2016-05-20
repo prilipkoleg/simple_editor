@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple editor</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./public/css/style.css"/>
+
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="page-header">
+                <h1>Simple Editor</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="page-content container">
+
+        <div class="row">
+
+            <!-- Blog Entries Column -->
+            <div class="col-md-9">
+
+                <h4 class="page-header">
+                    Link на файл
+                    <small>(html,css,js)</small>
+                </h4>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                            <input id="fileUrl" type="text" class="form-control" value="http://my.ovobox.com/js/ovolib.js" placeholder="Link ...">
+                            <!--<input id="fileUrl" type="text" class="form-control" value="http://my.ovobox.com/css/site.css" placeholder="Link ...">-->
+                            <span class="input-group-btn">
+                                <button id="sendFile" class="btn btn-default" type="button">Загрузить</button>
+                            </span>
+                        </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+
+                <div class="row">
+                    <div class="alert alert-success fade in"></div>
+                </div>
+
+                <div class="row">
+
+                    <!-- Single button -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Action <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="ace-holder"></div>
+                </div>
+
+            </div>
+
+            <!-- Sidebar Widgets Column -->
+            <div class="col-md-3">
+
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">Panel heading</div>
+                    <div class="panel-body">
+                        <p>...</p>
+                    </div>
+
+                    <!-- List group -->
+                    <ul class="list-group">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Simple </p>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- ace -->
+    <script src="https://cdn.jsdelivr.net/ace/1.2.3/min/ace.js"></script>
+    <!--<script src="./ace/ace.js"></script>-->
+    <!-- jQuery -->
+    <script src="./public/js/jquery-2.2.3.min.js"></script>
+    <!-- editor -->
+    <script src="./editor.js" type="text/javascript" charset="UTF-8"></script>
+
+</body>
+</html>
