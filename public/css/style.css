@@ -7,11 +7,15 @@ header {
 .page-content .row{
     padding: 20px;
 }
-#ace-holder{
-    background: #ccc;
-}
-#ace-holder{
+#ace-holder.active{
     min-height: 400px;
     width: 100%;
     background: rgba(0, 255, 210, 0.07);
+}
+#listOfFiles {
+    cursor: pointer;
+}
+#listOfFiles li:hover {
+    background: #13bdcd;
+    color: #fff;
 }

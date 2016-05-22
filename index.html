@@ -36,35 +36,24 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="input-group">
-                            <input id="fileUrl" type="text" class="form-control" value="http://my.ovobox.com/js/ovolib.js" placeholder="Link ...">
+                            <input id="fileUrl" type="text" class="form-control"  placeholder="Link ...">
+                            <!--<input id="fileUrl" type="text" class="form-control" value="http://my.ovobox.com/js/ovolib.js" placeholder="Link ...">-->
                             <!--<input id="fileUrl" type="text" class="form-control" value="http://my.ovobox.com/css/site.css" placeholder="Link ...">-->
                             <span class="input-group-btn">
-                                <button id="sendFile" class="btn btn-default" type="button">Загрузить</button>
+                                <button id="sendFile" class="btn btn-primary" type="button">Загрузить</button>
                             </span>
                         </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6">
+                        <div class="btn-group control-btns btn-group-justified ">
+                            <a id="editor-clean" href="#" class="btn btn-info disabled">Очистить</a>
+                            <a id="editor-save" href="#" class="btn btn-success disabled">Сохранить</a>
+                            <!--<a href="#" class="btn btn-primary">Очистить</a>-->
+                        </div>
                     </div><!-- /.col-lg-6 -->
                 </div><!-- /.row -->
 
                 <div class="row">
-                    <div class="alert alert-success fade in"></div>
-                </div>
-
-                <div class="row">
-
-                    <!-- Single button -->
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Action <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                        </ul>
-                    </div>
-
                     <div id="ace-holder"></div>
                 </div>
 
@@ -75,18 +64,12 @@
 
                 <div class="panel panel-default">
                     <!-- Default panel contents -->
-                    <div class="panel-heading">Panel heading</div>
-                    <div class="panel-body">
-                        <p>...</p>
-                    </div>
+                    <div class="panel-heading">Сохраненные файлы</div>
+                    <!--<div class="panel-body"></div>-->
 
                     <!-- List group -->
-                    <ul class="list-group">
-                        <li class="list-group-item">Cras justo odio</li>
-                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                        <li class="list-group-item">Morbi leo risus</li>
-                        <li class="list-group-item">Porta ac consectetur ac</li>
-                        <li class="list-group-item">Vestibulum at eros</li>
+                    <ul id="listOfFiles" class="list-group">
+                        <!--<li class="list-group-item">Cras justo odio</li>                        -->
                     </ul>
                 </div>
 
@@ -101,7 +84,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Simple </p>
+                    <p>Copyright &copy; Simple editor</p>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
